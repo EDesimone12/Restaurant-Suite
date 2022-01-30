@@ -5,11 +5,13 @@
   <groupId>Restaurant-Suite</groupId>  
   <artifactId>Restaurant-Suite</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>  
+  <version>1.0-SNAPSHOT</version>
+
   <properties> 
     <maven.compiler.source>15</maven.compiler.source>  
     <maven.compiler.target>15</maven.compiler.target> 
-  </properties>  
+  </properties>
+
   <!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-webapp-maven-plugin -->  
   <dependencies> 
     <dependency> 
