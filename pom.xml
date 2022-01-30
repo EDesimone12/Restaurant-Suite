@@ -3,7 +3,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">  
   <modelVersion>4.0.0</modelVersion>  
   <groupId>Restaurant-Suite</groupId>  
-  <artifactId>Restaurant-Suite</artifactId>  
+  <artifactId>Restaurant-Suite</artifactId>
+  <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>  
   <properties> 
     <maven.compiler.source>15</maven.compiler.source>  
@@ -19,6 +20,7 @@
   </dependencies>  
   <build>
     <plugins>
+
       <plugin>
         <groupId>com.microsoft.azure</groupId>
         <artifactId>azure-webapp-maven-plugin</artifactId>
@@ -26,14 +28,13 @@
         <configuration>
           <schemaVersion>v2</schemaVersion>
           <subscriptionId>dedd37bc-ba32-4d4a-a782-3585c5ee4bd7</subscriptionId>
-          <resourceGroup>Restaurant-Suite-1643559340641-rg</resourceGroup>
-          <appName>Restaurant-Suite-1643559340641</appName>
+          <resourceGroup>provaProva</resourceGroup>
+          <appName>desimoneWeb</appName>
           <pricingTier>F1</pricingTier>
-          <region>centralus</region>
           <runtime>
             <os>Windows</os>
             <javaVersion>Java 11</javaVersion>
-            <webContainer>Java SE</webContainer>
+            <webContainer>Tomcat 9.0</webContainer>
           </runtime>
           <deployment>
             <resources>
