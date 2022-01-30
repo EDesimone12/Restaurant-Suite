@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+  <modelVersion>4.0.0</modelVersion>  
+  <groupId>Restaurant-Suite</groupId>  
+  <artifactId>Restaurant-Suite</artifactId>  
+  <version>1.0-SNAPSHOT</version>  
+  <properties> 
+    <maven.compiler.source>15</maven.compiler.source>  
+    <maven.compiler.target>15</maven.compiler.target> 
+  </properties>  
+  <!-- https://mvnrepository.com/artifact/com.microsoft.azure/azure-webapp-maven-plugin -->  
+  <dependencies> 
+    <dependency> 
+      <groupId>com.microsoft.azure</groupId>  
+      <artifactId>azure-webapp-maven-plugin</artifactId>  
+      <version>2.3.0</version> 
+    </dependency> 
+  </dependencies>  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.microsoft.azure</groupId>
+        <artifactId>azure-webapp-maven-plugin</artifactId>
+        <version>2.2.0</version>
+        <configuration>
+          <schemaVersion>v2</schemaVersion>
+          <subscriptionId>dedd37bc-ba32-4d4a-a782-3585c5ee4bd7</subscriptionId>
+          <resourceGroup>Restaurant-Suite-1643559340641-rg</resourceGroup>
+          <appName>Restaurant-Suite-1643559340641</appName>
+          <pricingTier>F1</pricingTier>
+          <region>centralus</region>
+          <runtime>
+            <os>Windows</os>
+            <javaVersion>Java 11</javaVersion>
+            <webContainer>Java SE</webContainer>
+          </runtime>
+          <deployment>
+            <resources>
+              <resource>
+                <directory>${project.basedir}/target</directory>
+                <includes>
+                  <include>*.jar</include>
+                </includes>
+              </resource>
+            </resources>
+          </deployment>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
