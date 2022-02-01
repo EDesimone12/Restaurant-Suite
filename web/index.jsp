@@ -11,6 +11,6 @@
     <title>Restaurant-Suite</title>
   </head>
   <body>
-  <p> Helloo World</p>
+  <p> Helloo World </p>
   </body>
 </html>
