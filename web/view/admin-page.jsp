@@ -50,7 +50,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <div class="logo me-auto">
-        <h1><a href="index.html">Restaurant Suite</a></h1>
+        <h1><a href="Home">Restaurant Suite</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.jsp"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -68,7 +68,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="#book-a-table" class="book-a-table-btn scrollto">Book a table</a>
+      <a href="Admin" class="book-a-table-btn scrollto">Admin</a>
 
     </div>
   </header><!-- End Header -->
@@ -82,7 +82,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Admin Console</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="Home">Home</a></li>
             <li>Admin Console</li>
           </ol>
         </div>
@@ -99,7 +99,7 @@
           <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
         </div>
 
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+        <form action="../forms/book-a-table.php" method="post" role="form" class="php-email-form">
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
             </div>
@@ -143,13 +143,6 @@
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Delicious</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End Footer -->

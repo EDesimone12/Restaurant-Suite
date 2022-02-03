@@ -44,7 +44,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <div class="logo me-auto">
-        <h1><a href="index.jsp">Restaurant Suite</a></h1>
+        <h1><a href="Home">Restaurant Suite</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.jsp"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -62,7 +62,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="#book-a-table" class="book-a-table-btn scrollto">Admin</a>
+      <a href="Admin" class="book-a-table-btn scrollto">Admin</a>
 
     </div>
   </header><!-- End Header -->
