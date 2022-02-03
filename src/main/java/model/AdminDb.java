@@ -2,6 +2,9 @@ package model;
 
 import org.checkerframework.checker.units.qual.A;
 
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -32,6 +35,33 @@ public class AdminDb {
         }
     }
 
+    public Admin checkAdmin(String nome,String psw) {
+        try (Connection con = ConPool.getInstance().getConnection()) {
+
+            String query = "SELECT codAdmin, nome FROM admin WHERE nome = ? and password = ?";
+            PreparedStatement ps =
+                    con.prepareStatement(query);
+            ps.setString(1, nome);
+
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            byte[] hash = digest.digest(psw.getBytes(StandardCharsets.UTF_8));
+            ps.setString(2, String.valueOf(hash));
+
+            ResultSet rs = ps.executeQuery();
+            Admin nuovo = new Admin();
+            if(rs.next()){
+                nuovo = new Admin(rs.getString(1), rs.getString(2));
+                return nuovo;
+            }else{
+                return null;
+            }
+
+        } catch (SQLException | NoSuchAlgorithmException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    //Rifare questa funzione, modificato il DB
     public boolean doSaveAdmin(int codAdmin, String nome) {
         try (Connection con = ConPool.getInstance().getConnection()) {
             PreparedStatement ps =
