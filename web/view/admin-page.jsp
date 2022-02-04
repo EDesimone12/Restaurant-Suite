@@ -1,3 +1,4 @@
+<%@ page import="model.Admin" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -93,37 +94,36 @@
     <!-- ======= Book A Table Section ======= -->
     <section id="book-a-table" class="book-a-table">
       <div class="container">
-
+        <% Admin admin = (Admin) session.getAttribute("admin");%>
+        <% if(admin==null){ %>
         <div class="section-title">
           <h2><span>Login</span></h2>
           <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
         </div>
 
-        <form action="../forms/book-a-table.php" method="post" role="form" class="php-email-form">
+        <form action="AdminLogin" method="post" class="php-email-form">
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
+              <input type="text" class="form-control" name="name" id="name" placeholder="Your Username">
             </div>
           </div>
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
             </div>
             <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Password" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+              <input type="password" name="password" class="form-control" id="password" placeholder="Your Password">
             </div>
           </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Login</button></div>
+          <div class="text-center"> <button id="loginbtn" type="submit">Login</button></div>
         </form>
-
+        <%}else{ %>
+        <div class="section-title">
+          <h2>Benvenuto <span><% admin.getNome();%>></span></h2>
+          <p>Ecco a te il pannello di amministrazione della WebApp!</p>
+        </div>
+        <%} %>
       </div>
     </section><!-- End Book A Table Section -->
 

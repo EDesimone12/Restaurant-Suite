@@ -1,5 +1,6 @@
 package model;
 
+import org.apache.commons.codec.digest.DigestUtils;
 import org.checkerframework.checker.units.qual.A;
 
 import java.nio.charset.StandardCharsets;
@@ -42,10 +43,9 @@ public class AdminDb {
             PreparedStatement ps =
                     con.prepareStatement(query);
             ps.setString(1, nome);
+            String sha256hex = DigestUtils.sha256Hex(psw);
 
-            MessageDigest digest = MessageDigest.getInstance("SHA-256");
-            byte[] hash = digest.digest(psw.getBytes(StandardCharsets.UTF_8));
-            ps.setString(2, String.valueOf(hash));
+            ps.setString(2, sha256hex);
 
             ResultSet rs = ps.executeQuery();
             Admin nuovo = new Admin();
@@ -56,7 +56,7 @@ public class AdminDb {
                 return null;
             }
 
-        } catch (SQLException | NoSuchAlgorithmException e) {
+        } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
