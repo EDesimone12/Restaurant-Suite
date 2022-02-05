@@ -40,8 +40,8 @@ public final class ConPool {
             PoolProperties p = new PoolProperties();
             p.setUrl("jdbc:mysql://pippodb.mysql.database.azure.com:3306/restaurantSuite?serverTimezone=UTC");
             p.setDriverClassName("com.mysql.cj.jdbc.Driver");
-            p.setUsername("pippo@pippodb");
-            p.setPassword("Ciao12345");
+            p.setUsername("INSERT-USERNAME");
+            p.setPassword("INSERT-PASSWORD");
             p.setMaxActive(maxActive);
             p.setInitialSize(initialSize);
             p.setMinIdle(minIdle);
