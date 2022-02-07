@@ -1,6 +1,6 @@
 <%@ page import="model.Admin" %>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
   <meta charset="utf-8">
@@ -10,8 +10,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -95,7 +93,7 @@
         <% if(admin==null){ %>
         <div class="section-title">
           <h2><span>Login</span></h2>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+          <p>Effettua l'accesso inserendo i tuoi dati personali.</p>
         </div>
 
         <form action="AdminLogin" method="post" class="php-email-form">
@@ -115,41 +113,13 @@
           </div>
           <div class="text-center"> <button id="loginbtn" type="submit">Login</button></div>
         </form>
+        <p>dfaffa</p>
         <%}else{ %>
         <div class="section-title">
           <h2>Benvenuto <span><% admin.getNome();%>></span></h2>
           <p>Ecco a te il pannello di amministrazione della WebApp!</p>
+          <p>dsadaddas</p>
         </div>
-        <table class="table">
-          <thead class="thead-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-          </tbody>
-        </table>
         <%} %>
       </div>
     </section><!-- End Book A Table Section -->
