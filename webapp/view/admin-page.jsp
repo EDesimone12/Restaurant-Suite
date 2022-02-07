@@ -109,7 +109,7 @@
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
             </div>
             <div class="col-lg-4 col-md-6 form-group">
-              <input type="password" name="password" class="form-control" id="password" placeholder="Your Password">
+              <input type="password" name="password" class="form-control"  id="password" placeholder="Your Password">
             </div>
           </div>
           <div class="text-center"> <button id="loginbtn" type="submit">Login</button></div>
@@ -117,7 +117,7 @@
 
         <%}else{ %>
         <div class="section-title">
-          <h2>Benvenuto <span><% admin.getNome();%>></span></h2>
+          <h2>Benvenuto <span> ${admin.nome} </span></h2>
           <p>Ecco a te il pannello di amministrazione della WebApp!</p>
         </div>
         <table class="table">
