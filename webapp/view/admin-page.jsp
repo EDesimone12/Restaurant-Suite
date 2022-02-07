@@ -10,7 +10,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -36,8 +37,8 @@
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center fixed-top ">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
-      <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
-      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00 PM</span></i>
+      <i class="bi bi-phone d-flex align-items-center"><span>089 961 111</span></i>
+      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Lun-Dom: 11:00 - 24:00 </span></i>
     </div>
   </section>
 
@@ -113,13 +114,42 @@
           </div>
           <div class="text-center"> <button id="loginbtn" type="submit">Login</button></div>
         </form>
-        <p>dfaffa</p>
+
         <%}else{ %>
         <div class="section-title">
           <h2>Benvenuto <span><% admin.getNome();%>></span></h2>
           <p>Ecco a te il pannello di amministrazione della WebApp!</p>
-          <p>dsadaddas</p>
         </div>
+        <table class="table">
+          <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          </tbody>
+        </table>
         <%} %>
       </div>
     </section><!-- End Book A Table Section -->
