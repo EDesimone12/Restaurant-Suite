@@ -31,10 +31,6 @@ public final class ConPool {
      *  @return Connection
      */
     public static Connection getConnection() throws SQLException {
-        final int maxActive = 100;
-        final int initialSize = 10;
-        final int minIdle = 10;
-        final int timeout = 60;
 
         if (datasource == null) {
             PoolProperties p = new PoolProperties();
