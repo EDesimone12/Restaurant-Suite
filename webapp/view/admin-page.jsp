@@ -120,6 +120,7 @@
           <h2>Benvenuto <span> ${admin.nome} </span></h2>
           <p>Ecco a te il pannello di amministrazione della WebApp!</p>
         </div>
+        <h2>Prenotazioni</h2>
         <table class="table">
           <thead class="thead-dark">
           <tr>
