@@ -42,11 +42,6 @@ public final class ConPool {
             p.setDriverClassName("com.mysql.cj.jdbc.Driver");
             p.setUsername(System.getenv("My_SQL_USER"));
             p.setPassword(System.getenv("My_SQL_PSW"));
-            p.setMaxActive(maxActive);
-            p.setInitialSize(initialSize);
-            p.setMinIdle(minIdle);
-            p.setRemoveAbandonedTimeout(timeout);
-            p.setRemoveAbandoned(true);
             datasource = new DataSource();
             datasource.setPoolProperties(p);
         }
