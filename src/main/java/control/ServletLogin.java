@@ -2,6 +2,8 @@ package control;
 
 import model.Admin;
 import model.AdminDb;
+import model.Prenotazione;
+import model.PrenotazioneDb;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.ArrayList;
 
 
 @WebServlet("/AdminLogin")
@@ -34,6 +37,10 @@ public class ServletLogin extends HttpServlet {
 
             resp.setContentType("Login effettuato con successo");
             req.setAttribute("esito", "1");
+
+            PrenotazioneDb servicePr = new PrenotazioneDb();
+            ArrayList<Prenotazione> list = servicePr.doRetrieveAll();
+            req.setAttribute("prList",list);
 
         }else{
             session.setAttribute("admin",null);
