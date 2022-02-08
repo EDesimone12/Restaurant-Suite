@@ -40,7 +40,7 @@ public class ServletLogin extends HttpServlet {
 
             PrenotazioneDb servicePr = new PrenotazioneDb();
             ArrayList<Prenotazione> list = servicePr.doRetrieveAll();
-            req.setAttribute("prList",list);
+            session.setAttribute("prList",list);
 
         }else{
             session.setAttribute("admin",null);
