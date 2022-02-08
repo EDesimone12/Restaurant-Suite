@@ -1,4 +1,6 @@
 <%@ page import="model.Admin" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="model.Prenotazione" %>
 <!DOCTYPE html>
 <html lang="it">
 
@@ -115,6 +117,7 @@
         </form>
 
         <%}else{ %>
+        <% ArrayList<Prenotazione> list = (ArrayList<Prenotazione>) session.getAttribute("prList");%>
         <div class="section-title">
           <h2>Benvenuto <span> ${admin.nome} </span></h2>
           <p>Ecco a te il pannello di amministrazione della WebApp!</p>
@@ -123,7 +126,6 @@
         <table class="table">
           <thead class="thead-dark">
           <tr>
-            <th scope="col">#</th>
             <th scope="col">Codice</th>
             <th scope="col">Cognome</th>
             <th scope="col">Username</th>
@@ -133,12 +135,18 @@
           </tr>
           </thead>
           <tbody>
+          <% for (Prenotazione elem : list) {
+          System.out.println("dd"+elem);%>
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <th scope="row"> ${elem.codPrenotazione} </th>
+            <td> ${elem.cognome} </td>
+            <td> ${elem.username} </td>
+            <td> ${elem.nPersone} </td>
+            <td> ${elem.ordinazioni} </td>
+            <td> ${elem.orario} </td>
+            <td> ${elem.data} </td>
           </tr>
+          <% } %>
           </tbody>
         </table>
         <%} %>
