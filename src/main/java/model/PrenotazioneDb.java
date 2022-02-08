@@ -36,4 +36,19 @@ public class PrenotazioneDb {
             throw new RuntimeException(e);
         }
     }
+
+    public void deleteByCod(int codPrenotazione){
+        try (Connection con = ConPool.getInstance().getConnection()) {
+
+            String query = "DELETE from prenotazione where codPrenotazione = ?  ";
+            PreparedStatement ps =
+                    con.prepareStatement(query);
+
+            ps.setInt(1,codPrenotazione);
+            ps.executeUpdate();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
