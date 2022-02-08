@@ -113,13 +113,13 @@
               <input type="password" name="password" class="form-control"  id="password" placeholder="Your Password">
             </div>
           </div>
-          <div class="text-center"> <button id="loginbtn" type="submit">Login</button></div>
+          <div class="text-center"> <button class="loginbtn" type="submit">Login</button></div>
         </form>
 
         <%}else{ %>
         <% ArrayList<Prenotazione> list = (ArrayList<Prenotazione>) session.getAttribute("prList");%>
         <div class="section-title">
-          <h2>Benvenuto <span> ${admin.nome} </span></h2>
+          <h2>Benvenuto <span> <%= admin.getNome() %> </span></h2>
           <p>Ecco a te il pannello di amministrazione della WebApp!</p>
         </div>
         <h2>Prenotazioni</h2>
@@ -132,19 +132,20 @@
             <th scope="col">#Persone</th>
             <th scope="col">Ordinazioni</th>
             <th scope="col">Orario</th>
+            <th scope="col">Data</th>
           </tr>
           </thead>
           <tbody>
-          <% for (Prenotazione elem : list) {
-          System.out.println("dd"+elem);%>
+          <% for (Prenotazione elem : list) { %>
           <tr>
-            <th scope="row"> ${elem.codPrenotazione} </th>
-            <td> ${elem.cognome} </td>
-            <td> ${elem.username} </td>
-            <td> ${elem.nPersone} </td>
-            <td> ${elem.ordinazioni} </td>
-            <td> ${elem.orario} </td>
-            <td> ${elem.data} </td>
+            <th scope="row"> <%= elem.getCodPrenotazione() %> </th>
+            <td> <%= elem.getCognome() %> </td>
+            <td> <%= elem.getUsername() %> </td>
+            <td> <%= elem.getnPersone() %> </td>
+            <td> <%= elem.getOrdinazioni() %> </td>
+            <td> <%= elem.getOrario() %> </td>
+            <td> <%= elem.getData() %> </td>
+            <td> <button class="loginbtn"><i class="bi bi-trash-fill"></i> </button> </td>
           </tr>
           <% } %>
           </tbody>

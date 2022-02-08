@@ -969,7 +969,7 @@ section {
   transition: 0.4s;
   border-radius: 50px;
 }
-#loginbtn{
+.loginbtn{
   background: #ffb03b;
   border: 0;
   padding: 10px 24px;
