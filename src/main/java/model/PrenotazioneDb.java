@@ -31,7 +31,6 @@ public class PrenotazioneDb {
                         rs.getTime(6), rs.getDate(7));
                 prList.add(nuovo);
             }
-
             return prList;
         } catch (SQLException e) {
             throw new RuntimeException(e);
