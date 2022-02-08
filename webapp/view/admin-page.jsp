@@ -123,7 +123,7 @@
           <p>Ecco a te il pannello di amministrazione della WebApp!</p>
         </div>
         <h2>Prenotazioni</h2>
-        <table class="table">
+        <table class="table" id="tablePrenotazioni">
           <thead class="thead-dark">
           <tr>
             <th scope="col">Codice</th>
@@ -133,6 +133,7 @@
             <th scope="col">Ordinazioni</th>
             <th scope="col">Orario</th>
             <th scope="col">Data</th>
+            <th scope="col"> </th>
           </tr>
           </thead>
           <tbody>
@@ -145,7 +146,7 @@
             <td> <%= elem.getOrdinazioni() %> </td>
             <td> <%= elem.getOrario() %> </td>
             <td> <%= elem.getData() %> </td>
-            <td> <button class="loginbtn"><i class="bi bi-trash-fill"></i> </button> </td>
+            <td> <button class="deletebtn" onclick="deleteElem(event)" value="<%= elem.getCodPrenotazione() %>"><i class="bi bi-trash-fill" value="<%= elem.getCodPrenotazione() %>"></i> </button> </td>
           </tr>
           <% } %>
           </tbody>
@@ -181,9 +182,9 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="funJS/admin.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>

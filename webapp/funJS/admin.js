@@ -3,7 +3,7 @@ function deleteElem(event){
 
     var xmlHttpReq = new XMLHttpRequest();
     if (this.readyState == 4 && this.status == 200) {
-        inviare.parentElement.removeChild(inviare);
+        //inviare.parentElement.removeChild(inviare);
 
     }
 
