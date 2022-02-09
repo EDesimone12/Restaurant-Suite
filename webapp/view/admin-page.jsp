@@ -138,7 +138,7 @@
           </thead>
           <tbody>
           <% for (Prenotazione elem : list) { %>
-          <tr>
+          <tr id="<%= elem.getCodPrenotazione() %>">
             <th scope="row"> <%= elem.getCodPrenotazione() %> </th>
             <td> <%= elem.getCognome() %> </td>
             <td> <%= elem.getUsername() %> </td>

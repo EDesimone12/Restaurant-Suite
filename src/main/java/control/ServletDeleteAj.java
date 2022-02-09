@@ -16,27 +16,28 @@ import java.util.ArrayList;
 public class ServletDeleteAj extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        this.doGet(req, resp);
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession(true);
 
         PrenotazioneDb service = new PrenotazioneDb();
         String codice = req.getParameter("codPrenotazione");
-        System.out.println(codice);
-
+        System.out.println("dd"+codice);
         int codPr = Integer.parseInt(codice);
-
         System.out.println(codPr);
         service.deleteByCod(codPr);
 
         PrenotazioneDb servicePr = new PrenotazioneDb();
         ArrayList<Prenotazione> list = servicePr.doRetrieveAll();
-        session.setAttribute("prList",list);
         for (Prenotazione elem:list) {
             System.out.println(elem);
         }
-    }
+        session.setAttribute("prList",list);
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost(req,resp);
+        resp.setContentType("text/plain;charset=UTF-8");
+        resp.getWriter().append(codice);
     }
 }
