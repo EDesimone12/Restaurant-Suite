@@ -1,7 +1,6 @@
 package control;
 
-import model.Prenotazione;
-import model.PrenotazioneDb;
+import model.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
