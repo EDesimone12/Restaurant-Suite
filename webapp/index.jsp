@@ -141,30 +141,30 @@
 
         <div class="row">
 
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/about.jpg");'>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("ourIMG/qrCode_bot.jfif");'>
           </div>
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
             <div class="content">
-              <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+              <h3>Utilizza il nuovo <strong>bot Telegram Restaurant Suite</strong></h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Questo bot ti fornirà un aiuto per conoscere il nostro ristorante!
               </p>
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Potrai svolgere diverse operazioni grazie a questo fantastico bot, le principali sono:
               </p>
               <ul>
-                <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li><i class="bx bx-check-double"></i> Prenotazione di un tavolo!</li>
+                <li><i class="bx bx-check-double"></i> Possibilità di visionare il menù in diverse lingue!</li>
+                <li><i class="bx bx-check-double"></i> Ricerca di un piatto all'interno del menù! </li>
               </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
+                Potrai facilmente prenotare un tavolo comunicando al bot orario e data della prenotazione con le relative informazioni
+                di contatto.<br>
+                Potrai consultare il menù in diverse lingue, attraverso appositi comandi.<br>
+                Potrai ricercare pietanze all'interno del menù semplicemente caricando una foto!<br>
+                <b>Che aspetti? Prova anche tu! Scannerizza il Codice QR</b>
               </p>
             </div>
 
@@ -180,7 +180,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Organize Your <span>Events</span> in our Restaurant</h2>
+          <h2>Prova le <span>funzionalità</span> del nostro nuovo bot</h2>
         </div>
 
         <div class="events-slider swiper">
@@ -532,7 +532,7 @@
       <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
       <div class="social-links">
         <a href="https://github.com/EDesimone12/Restaurant-Suite" class="Github"><i class="bx bxl-github"></i></a>
-        <a href="#" class="Telegram"><i class="bx bxl-telegram"></i></a>
+        <a href="https://t.me/RestaurantSuite_bot" class="Telegram"><i class="bx bxl-telegram"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Restaurant Suite</span></strong>. All Rights Reserved

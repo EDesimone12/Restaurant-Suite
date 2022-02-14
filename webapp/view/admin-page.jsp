@@ -157,7 +157,7 @@
       <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
       <div class="social-links">
         <a href="https://github.com/EDesimone12/Restaurant-Suite" class="Github"><i class="bx bxl-github"></i></a>
-        <a href="#" class="Telegram"><i class="bx bxl-telegram"></i></a>
+        <a href="https://t.me/RestaurantSuite_bot" class="Telegram"><i class="bx bxl-telegram"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Restaurant Suite</span></strong>. All Rights Reserved
