@@ -1,8 +1,10 @@
+<%@ page  contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="it">
 
 <head>
   <meta charset="UTF-8">
+
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Restaurant Suite </title>
@@ -80,7 +82,7 @@
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown"><span>Restaurant</span> Suite</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <p class="animate__animated animate__fadeInUp">Nessun amore è più sincero dell'amore per il cibo. <br> -GEORGE BERNARD SHAW</p>
                 <div>
                   <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Il nostro Menu</a>
                   <a href="#about" class="btn-book animate__animated animate__fadeInUp scrollto">Il Bot</a>
@@ -93,8 +95,8 @@
           <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <h2 class="animate__animated animate__fadeInDown"><span>Restaurant</span> Suite</h2>
+                <p class="animate__animated animate__fadeInUp">Per vivere, un uomo ha bisogno di cibo, di acqua e di una mente acuta. <br> -LOUIS ZAMPERINI </p>
                 <div>
                   <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Il nostro Menu</a>
                   <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Il Bot</a>
@@ -107,8 +109,8 @@
           <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <h2 class="animate__animated animate__fadeInDown"><span>Restaurant</span> Suite</h2>
+                <p class="animate__animated animate__fadeInUp">Noi forniamo cibo che i clienti amano, giorno dopo giorno, dopo giorno. La gente ne vuole sempre di più. <br> -RAY KROC</p>
                 <div>
                   <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Il nostro Menu</a>
                   <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Il Bot</a>

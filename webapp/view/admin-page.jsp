@@ -1,11 +1,12 @@
 <%@ page import="model.Admin" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="model.Prenotazione" %>
+<%@ page  contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="it">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Inner Page - Delicious Bootstrap Template</title>
