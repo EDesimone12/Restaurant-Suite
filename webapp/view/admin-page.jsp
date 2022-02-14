@@ -53,20 +53,7 @@
         <!-- <a href="index.jsp"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#events">Events</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-          <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
-          <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <a href="Admin" class="book-a-table-btn scrollto">Admin</a>
+      <a href="Home" class="book-a-table-btn scrollto">Home</a>
 
     </div>
   </header><!-- End Header -->
@@ -92,10 +79,15 @@
     <section id="book-a-table" class="book-a-table">
       <div class="container">
         <% Admin admin = (Admin) session.getAttribute("admin");%>
+        <% String esito = (String) session.getAttribute("esito"); %>
         <% if(admin==null){ %>
         <div class="section-title">
           <h2><span>Login</span></h2>
-          <p>Effettua l'accesso inserendo i tuoi dati personali.</p>
+          <% if(esito == null || esito.equalsIgnoreCase("0")){ %>
+            <p>Prova ad effettuare nuovamente il login username e/o password non corretti!</p>
+          <%} else{ %>
+            <p>Effettua l'accesso inserendo i tuoi dati personali.</p>
+          <% } %>
         </div>
 
         <form action="AdminLogin" method="post" class="php-email-form">
@@ -163,14 +155,11 @@
       <h3>Delicious</h3>
       <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/EDesimone12/Restaurant-Suite" class="Github"><i class="bx bxl-github"></i></a>
+        <a href="#" class="Telegram"><i class="bx bxl-telegram"></i></a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>Delicious</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Restaurant Suite</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->

@@ -1,9 +1,6 @@
 package control;
 
-import model.Admin;
-import model.AdminDb;
-import model.Prenotazione;
-import model.PrenotazioneDb;
+import model.*;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -36,7 +33,7 @@ public class ServletLogin extends HttpServlet {
             session.setAttribute("admin",user);
 
             resp.setContentType("Login effettuato con successo");
-            req.setAttribute("esito", "1");
+            session.setAttribute("esito", "1");
 
             PrenotazioneDb servicePr = new PrenotazioneDb();
             ArrayList<Prenotazione> list = servicePr.doRetrieveAll();
@@ -46,7 +43,7 @@ public class ServletLogin extends HttpServlet {
             session.setAttribute("admin",null);
 
             resp.setContentType("Username e/o Password errati! Riprovare");
-            req.setAttribute("esito", "'");
+            session.setAttribute("esito", "0");
         }
 
         RequestDispatcher dispatcher =
