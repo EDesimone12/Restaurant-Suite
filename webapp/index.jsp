@@ -54,7 +54,7 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Il botAA</a></li>
+          <li><a class="nav-link scrollto" href="#about">Il bot</a></li>
           <li><a class="nav-link scrollto" href="#events">Funzionalità</a></li>
           <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
           <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
