@@ -71,7 +71,7 @@
           <schemaVersion>v2</schemaVersion>
           <subscriptionId>dedd37bc-ba32-4d4a-a782-3585c5ee4bd7</subscriptionId>
           <resourceGroup>provaProva</resourceGroup>
-          <appName>desimoneWeb</appName>
+          <appName>RestaurantSuite</appName>
           <pricingTier>F1</pricingTier>
           <runtime>
             <os>Windows</os>
