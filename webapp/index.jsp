@@ -57,7 +57,6 @@
           <li><a class="nav-link scrollto" href="#about">Il bot</a></li>
           <li><a class="nav-link scrollto" href="#events">Funzionalità</a></li>
           <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-          <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
           <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
