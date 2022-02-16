@@ -279,16 +279,16 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Check our tasty <span>Menu</span></h2>
+          <h2>Dai un'occhiata al nostro <span>Menu!</span></h2>
         </div>
 
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">Show All</li>
-              <li data-filter=".filter-starters">Starters</li>
-              <li data-filter=".filter-salads">Salads</li>
-              <li data-filter=".filter-specialty">Specialty</li>
+              <li data-filter="*" class="filter-active">Mostra tutto</li>
+              <li data-filter=".filter-starters">Antipasti</li>
+              <li data-filter=".filter-salads">Primi</li>
+              <li data-filter=".filter-specialty">Secondi</li>
             </ul>
           </div>
         </div>
@@ -297,82 +297,92 @@
 
           <div class="col-lg-6 menu-item filter-starters">
             <div class="menu-content">
-              <a href="#">Lobster Bisque</a><span>$5.95</span>
+              <a href="#">Prosciutto e Mozzarella</a><span>€5.95</span>
             </div>
             <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <div class="menu-content">
-              <a href="#">Bread barrel</a><span>$6.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
+              Prosciutto Crudo San Daniele, Mozzarella
             </div>
           </div>
 
           <div class="col-lg-6 menu-item filter-starters">
             <div class="menu-content">
-              <a href="#">Crab Cake</a><span>$7.95</span>
+              <a href="#">Cocktail di Gamberi</a><span>€7.95</span>
             </div>
             <div class="menu-ingredients">
-              A delicate crab cake served on a toasted roll with lettuce and tartar sauce
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <div class="menu-content">
-              <a href="#">Caesar Selections</a><span>$8.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <div class="menu-content">
-              <a href="#">Tuscan Grilled</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+             Gamberetti, Ketchup, Maionese, Lattuga
             </div>
           </div>
 
           <div class="col-lg-6 menu-item filter-starters">
             <div class="menu-content">
-              <a href="#">Mozzarella Stick</a><span>$4.95</span>
+              <a href="#">Mozzarella Stick</a><span>€4.95</span>
             </div>
             <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
+              Mozzarella stick impanati e fritti
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#">Insalata di Mare</a><span>€4.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Polpo, Calamari,Gamberi, Sedano, Aceto
             </div>
           </div>
 
           <div class="col-lg-6 menu-item filter-salads">
             <div class="menu-content">
-              <a href="#">Greek Salad</a><span>$9.95</span>
+              <a href="#">Spaghetti alla Norma</a><span>€8.95</span>
             </div>
             <div class="menu-ingredients">
-              Fresh spinach, crisp romaine, tomatoes, and Greek olives
+              Salsa di Pomodoro, Melanzane, Ricotta salata
             </div>
           </div>
 
           <div class="col-lg-6 menu-item filter-salads">
             <div class="menu-content">
-              <a href="#">Spinach Salad</a><span>$9.95</span>
+              <a href="#">Gnocchi alla Sorrentina</a><span>€8.95</span>
             </div>
             <div class="menu-ingredients">
-              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+              Salsa di Pomodoro, Mozzarella, Basilico
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#">Spaghetti al Nero di Seppia</a><span>€8.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Seppie,Prezzemolo, Aglio, Peperoncino, Vino bianco
             </div>
           </div>
 
           <div class="col-lg-6 menu-item filter-specialty">
             <div class="menu-content">
-              <a href="#">Lobster Roll</a><span>$12.95</span>
+              <a href="#">Pesce Spada alla griglia</a><span>€9.95</span>
             </div>
             <div class="menu-ingredients">
-              Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+              Pesce Spada grigliato, Limone, Lattuga
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <div class="menu-content">
+              <a href="#">Bistecca con patatine</a><span>€9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Bistecca di Angus con patatine
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <div class="menu-content">
+              <a href="#">Salsiccia di Cinghiale Nero</a><span>€12.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Salsiccia di Cinghiale Nero, Lattuga, Aceto Balsamico
             </div>
           </div>
 
