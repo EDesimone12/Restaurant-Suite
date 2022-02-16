@@ -147,7 +147,7 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
             <div class="content">
-              <h3>Utilizza il nuovo <strong>bot Telegram Restaurant Suite</strong></h3>
+              <h3>Utilizza il nuovo <strong>Bot Telegram Restaurant Suite</strong></h3>
               <p>
                 Questo bot ti fornirà un aiuto per conoscere il nostro ristorante!
               </p>
