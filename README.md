@@ -1,4 +1,5 @@
-# :fork_and_knife: Restaurant-Suite :wine_glass:
+# :fork_and_knife: Restaurant-Suite :wine_glass: [![Build and deploy - RestaurantSuite](https://github.com/EDesimone12/Restaurant-Suite/actions/workflows/develop_restaurantsuite.yml/badge.svg)](https://github.com/EDesimone12/Restaurant-Suite/actions/workflows/develop_restaurantsuite.yml)
+
 <img src="https://github.com/EDesimone12/Restaurant-Suite/blob/main/readmeIMG/logo.png" alt="Restaurant-Suite logo">
 
 The project is a suite for managing restaurant reservations, it is composed of two systems:
