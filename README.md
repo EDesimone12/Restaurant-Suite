@@ -1,5 +1,6 @@
 # :fork_and_knife: Restaurant-Suite :wine_glass:
-<img src="https://github.com/Restaurant-Suite/readmeIMG/logo.png" alt="Restaurant-Suite logo">
+<img src="https://github.com/EDesimone12/Restaurant-Suite/blob/main/readmeIMG/logo.png" alt="Restaurant-Suite logo">
+
 The project is a suite for managing restaurant reservations, it is composed of two systems:
 * A __Telegram Bot__ for the user, which allows you to make and remove reservations, view information about the restaurant and the menu (Italian - English - Spanish), search the menu using image or text, order dishes;
 * A __Web App__ that shows restaurant information and instructions for using the Telegram Bot, and the admin (restaurant owner) can access and delete reservations through a special section;
