@@ -22,7 +22,9 @@ The Telegram Bot implemented through __"BotService"__, and the WebApp implemente
 The Telegram Bot uses the __"Computer Vision"__ service to recognize a photo of dishes, to determine their presence in the menu.  
 Use the __"Translator"__ service to translate the menu.  
 Furthermore, thanks to two __Serverless functions__, the notification of the booking and a booking reminder are implemented.  
-The user will then use the system through the Telegram Bot or through the WebApp and the admin will use the system through the WebApp, specifically it will have a dedicated section for managing reservations.  
+The user will then use the system through the Telegram Bot or through the WebApp and the admin will use the system through the WebApp, specifically it will have a dedicated section for managing reservations.   
+
+<img src="https://github.com/EDesimone12/Restaurant-Suite/blob/main/readmeIMG/CloudArchi.drawio.png" alt="Project architecture">
 
 ---
 # :rocket: Installation :computer:
