@@ -341,10 +341,10 @@
 
           <div class="col-lg-6 menu-item filter-salads">
             <div class="menu-content">
-              <a href="#">Gnocchi alla Sorrentina</a><span>€8.95</span>
+              <a href="#">Spaghetti con le cozze</a><span>€8.95</span>
             </div>
             <div class="menu-ingredients">
-              Salsa di Pomodoro, Mozzarella, Basilico
+              Spaghetti, Cozze, Prezzemolo
             </div>
           </div>
 
@@ -359,10 +359,10 @@
 
           <div class="col-lg-6 menu-item filter-specialty">
             <div class="menu-content">
-              <a href="#">Pesce Spada alla griglia</a><span>€9.95</span>
+              <a href="#">Filetto di Salmone</a><span>€9.95</span>
             </div>
             <div class="menu-ingredients">
-              Pesce Spada grigliato, Limone, Lattuga
+              Salmone, Limone, Olio
             </div>
           </div>
 
