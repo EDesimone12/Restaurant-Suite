@@ -46,6 +46,11 @@ Then the Azure MySQL Server
 ```bash
 az mysql server create --resource-group <myresourcegroup> --name <mydemoserver> --location westus --admin-user <myadmin> --admin-password <server_admin_password> --sku-name GP_Gen5_2
 ```
+The creation of the database on the Azure MySQL Server created
+```bash
+az mysql db create --resource-group <myresourcegroup> --name <demo> --server-name <mydemoserver>
+```
+
 If you want to set Firewall rules
 ```bash
 az mysql server firewall-rule create --resource-group <myresourcegroup> --server <mydemoserver> --name <AllowMyIP> --start-ip-address <192.168.0.1> --end-ip-address <192.168.0.1>
