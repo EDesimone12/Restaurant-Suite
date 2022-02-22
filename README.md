@@ -71,11 +71,11 @@ Follow these simple steps for the WebApp creation!
     > Operating system: Windows    
     > Region: West Europe    
     > SKU: Free    
-    > ASP Name: <your-asp-name>    
-    > GitHub Account: <your-account-name>    
-    > Organization: <your-organization-name>    
-    > Repository: <your-repository>    
-    > Branch: <your-branch-name>    
+    > ASP Name: < your-asp-name >    
+    > GitHub Account: < your-account-name >    
+    > Organization:  < your-organization-name >    
+    > Repository: < your-repository >    
+    > Branch: < your-branch-name >    
 5. Have fun with your best IDE and its Azure plugin as at the link [here](https://docs.microsoft.com/en-gb/azure/app-service/quickstart-java?tabs=tomcat&pivots=platform-windows), our configuration was [IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=windows) with the [Azure toolkit plugin](https://plugins.jetbrains.com/plugin/8053-azure-toolkit-for-intellij/).
 ## Serverless Function
  In order to start the (creation - working - deploying)  process, you have to:
