@@ -111,7 +111,7 @@ Follow these simple steps for the WebApp creation!
     ```bash
     npm install -g generator-botbuilder
     ```   
-    __Bot Creation__    
+   __Bot Creation__    
     Use the generator for the creation of a core bot    
     ```bash
     yo botbuilder
@@ -124,7 +124,9 @@ Follow these simple steps for the WebApp creation!
     ? Which template would you like to start with? Core Bot - https://aka.ms/bot-template-core           
     ? Looking good.  Shall I go ahead and create your new bot? Yes         
     ```   
-    __Run the Bot__      
+       
+   __Run the Bot__       
+   
     Open terminal, find your project directory and run this command       
       ```bash
         npm start
@@ -137,6 +139,7 @@ Follow these simple steps for the WebApp creation!
    * Select "Connect"          
    
    __Deploy Azure Bot__       
+   
    You must have a Javascript Bot locally developed       
    Create the App Service for the Bot hosting       
    ```bash
