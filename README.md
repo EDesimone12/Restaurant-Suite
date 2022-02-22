@@ -34,6 +34,10 @@ git clone https://github.com/EDesimone12/Restaurant-Suite.git
 ```
 Create the resources used on the azure portal through the [Azure CLI](https://docs.microsoft.com/it-it/cli/azure/install-azure-cli) or the [online platform](https://azure.microsoft.com/en-gb/account/).
 
+Run this command on the Azure CLI to log into
+```bash
+az login
+```
 
 ## Azure Database for MySQL Server
 Start the creation of the resources, 
@@ -91,5 +95,70 @@ Follow these simple steps for the WebApp creation!
   3. You can now edit and run your function locally    
   4. Use the deploy button of the Azure plugin for an easily deploy
   
- Official Microsoft Azure Guide about Serverless function [here](https://docs.microsoft.com/it-it/azure/azure-functions/create-first-function-vs-code-node)
+ Official Microsoft Azure Guide about Serverless function [here](https://docs.microsoft.com/it-it/azure/azure-functions/create-first-function-vs-code-node)       
+ 
+ ## Azure Bot
+  In order to start the (creation - working - deploying)  process, you have to:  
+  * Download [Node.js 16.x](https://nodejs.org/en/download/releases/)     
+  * Download [Bot Framework Emulator](https://dev.botframework.com)       
+  * Installare Yeoman e il generatore Yeoman per Bot Framework v4: 
+    1. Open terminal with administrator privileges     
+    2. Install Yeoman   
+    ```bash
+    npm install -g yo
+    ```
+    3. Install Yeoman generator
+    ```bash
+    npm install -g generator-botbuilder
+    ```   
+    __Bot Creation__    
+    Use the generator for the creation of a core bot    
+    ```bash
+    yo botbuilder
+    ```   
+    Output after the entire command execution     
+    ```bash
+    ? What's the name of your bot? < my-chat-bot >       
+    ? What will your bot do? < Description of bot >          
+    ? What programming language do you want to use? JavaScript         
+    ? Which template would you like to start with? Core Bot - https://aka.ms/bot-template-core           
+    ? Looking good.  Shall I go ahead and create your new bot? Yes         
+    ```   
+    __Run the Bot__      
+    Open terminal, find your project directory and run this command       
+      ```bash
+        npm start
+      ```   
+    Now the bot is running on 3978 port      
+    Run the emulator and connect it to the bot      
+   * Open Bot Framework Emulator    
+   * Click "Open Bot"    
+   * Type the Bot url usually is an url like, http://localhost:3978/api/messages    
+   * Select "Connect"          
+   
+   __Deploy Azure Bot__       
+   You must have a Javascript Bot locally developed       
+   Create the App Service for the Bot hosting       
+   ```bash
+      az ad app create --display-name <displayName> --password <AtLeastSixteenCharacters_0> --available-to-other-tenants
+   ``` 
+   Save appId & appSecret for the next step     
+   
+   Execute the deploy through arm model with a new resource group     
+   ```bash
+      az deployment sub create --template-file <path-to-template-with-new-rg.json> --location <region-location-name> --parameters appId=<app-id-from-previous-step> appSecret=<password-from-previous-step>botId=<id or bot-app-service-name> botSku=F0 newAppServicePlanName=<new-service-plan-name> newWebAppName=<bot-app-service-name> groupName=<new-group-name> groupLocation=<region-location-name> newAppServicePlanLocation=<region-location-name> --name=<bot-app-service-name>
+   ``` 
+         
   
+   Prepare your project for the deploy       
+  * Set MicrosoftAppId & MicrosoftAppPassword in a file .env from the previous appId & appSecret     
+  * Move to project directory in a terminal window         
+   ```bash
+      az bot prepare-deploy --code-dir "." --lang Javascript
+   ``` 
+  * Make a .zip file containing all the project files and then       
+   ```bash
+      az webapp deployment source config-zip --resource-group <resource-group-name> --name <name-of-web-app> --src <project-zip-path>
+   ``` 
+   
+   
