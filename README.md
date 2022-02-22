@@ -111,26 +111,28 @@ Follow these simple steps for the WebApp creation!
     ```bash
     npm install -g generator-botbuilder
     ```   
-   __Bot Creation__    
+    __Bot Creation__
+    
     Use the generator for the creation of a core bot    
     ```bash
-    yo botbuilder
-    ```   
-    Output after the entire command execution     
+        yo botbuilder
+    ```        
+    Output after the entire command execution    
     ```bash
-    ? What's the name of your bot? < my-chat-bot >       
-    ? What will your bot do? < Description of bot >          
-    ? What programming language do you want to use? JavaScript         
-    ? Which template would you like to start with? Core Bot - https://aka.ms/bot-template-core           
-    ? Looking good.  Shall I go ahead and create your new bot? Yes         
-    ```   
+       ? What's the name of your bot? < my-chat-bot >      
+       ? What will your bot do? < Description of bot >          
+       ? What programming language do you want to use? JavaScript         
+       ? Which template would you like to start with? Core Bot - https://aka.ms/bot-template-core           
+       ? Looking good.  Shall I go ahead and create your new bot? Yes         
+    ```       
        
-   __Run the Bot__       
+    __Run the Bot__       
    
-    Open terminal, find your project directory and run this command       
+    Open terminal, find your project directory and run this command
+    
       ```bash
-        npm start
-      ```   
+            npm start
+      ```     
     Now the bot is running on 3978 port      
     Run the emulator and connect it to the bot      
    * Open Bot Framework Emulator    
@@ -163,5 +165,30 @@ Follow these simple steps for the WebApp creation!
    ```bash
       az webapp deployment source config-zip --resource-group <resource-group-name> --name <name-of-web-app> --src <project-zip-path>
    ``` 
-   
-   
+## Computer Vision        
+ Creation of the resource using Azure Web Portal        
+ 
+1.  Go to the [home](https://portal.azure.com/#home)        
+2.  Press "Create a resource"        
+3.  Choose "Computer Vision"             
+4.  Insert informations about the resource         
+    > Subscription: < your subscription >          
+    > Resource group name: < your-resource-group >            
+    > Region:   < West Europe  >         
+    > Resource Name:  < Name >           
+    > SKU:   < Free F0 >          
+
+## Translator   
+ Creation of the resource using Azure Web Portal        
+ 
+1.  Go to the [home](https://portal.azure.com/#home)         
+2.  Press "Create a resource"         
+3.  Choose "Translator"             
+4.  Insert informations about the resource          
+    > Subscription: < your subscription >            
+    > Resource group name: < your-resource-group >              
+    > Region:   < West Europe  >         
+    > Resource Name:  < Name >             
+    > SKU:   < Free F0 >       
+
+
