@@ -26,7 +26,6 @@ public class PrenotazioneDb {
                 Time temp = rs.getTime(6);
                 temp.setHours(rs.getTime(6).getHours()-1);
 
-                System.out.println("orario:"+rs.getTime(6));
                 nuovo = new Prenotazione(rs.getInt(1),rs.getString(2),
                         rs.getString(3),rs.getInt(4),rs.getString(5),
                         temp, rs.getDate(7));
