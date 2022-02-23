@@ -408,7 +408,7 @@
 
           <div class="col-lg-6 col-md-6">
             <div class="member">
-              <div class="pic"><img src="ourIMG/eugenio.jpeg" class="img-fluid" alt="Master Chef Eugenio"></div>
+              <div class="pic"><img src="ourIMG/eugenio.jpg" class="img-fluid" alt="Master Chef Eugenio"></div>
               <div class="member-info">
                 <h4>Eugenio De Simone</h4>
                 <span>Master Chef</span>
@@ -422,7 +422,7 @@
 
           <div class="col-lg-6 col-md-6">
             <div class="member">
-              <div class="pic"><img src="ourIMG/lucia.jpeg" class="img-fluid" alt="Master Chef Lucia"></div>
+              <div class="pic"><img src="ourIMG/lucia.jfif" class="img-fluid" alt="Master Chef Lucia"></div>
               <div class="member-info">
                 <h4>Lucia Gaeta</h4>
                 <span>Master Chef</span>
