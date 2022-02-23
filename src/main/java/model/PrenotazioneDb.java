@@ -2,10 +2,7 @@ package model;
 
 import org.apache.commons.codec.digest.DigestUtils;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 
 public class PrenotazioneDb {
@@ -26,9 +23,13 @@ public class PrenotazioneDb {
             Prenotazione nuovo = new Prenotazione();
 
             while(rs.next()){
+                Time temp = rs.getTime(6);
+                temp.setHours(rs.getTime(6).getHours()-1);
+
+                System.out.println("orario:"+rs.getTime(6));
                 nuovo = new Prenotazione(rs.getInt(1),rs.getString(2),
                         rs.getString(3),rs.getInt(4),rs.getString(5),
-                        rs.getTime(6), rs.getDate(7));
+                        temp, rs.getDate(7));
                 prList.add(nuovo);
             }
             return prList;

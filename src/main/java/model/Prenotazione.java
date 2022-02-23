@@ -8,7 +8,7 @@ public class Prenotazione {
     private String cognome;
     private String username;
     private int nPersone;
-    private String ordinazioni; // Es. 1-17-33-42
+    private String ordinazioni; // Es. 01x01
     private Time orario;
     private Date data;
 
