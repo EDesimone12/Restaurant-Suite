@@ -188,7 +188,7 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="ourIMG/screenPrenotazione.jpg" class="img-fluid" alt="Prenotazione">
+                  <img src="ourIMG/screenPrenotazione.jpeg" class="img-fluid" alt="Prenotazione">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Prenotazione</h3>
@@ -196,13 +196,13 @@
                     Puoi effettuare una prenotazione al nostro ristorante utilizzando il nostro bot telegram!
                   </p>
                   <ul>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Inserisci i tuoi dati!</li>
+                    <li><i class="bi bi-check-circle"></i> Scegli se ordinare!</li>
+                    <li><i class="bi bi-check-circle"></i> Prenota!</li>
                   </ul>
                   <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
+                    Inserisci il numero di persone per le quali prenotare, la data e l'orario della prenotazione
+                    scegli se ordinare già le portate o meno e conferma la tua prenotazione!
                   </p>
                 </div>
               </div>
@@ -211,25 +211,20 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+                  <img src="ourIMG/screenMenu.jpeg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Birthday Parties</h3>
-                  <div class="price">
-                    <p><span>$189</span></p>
-                  </div>
+                  <h3>Visualizza il Menu</h3>
                   <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                    Puoi visualizzare il menu in diverse lingue!
                   </p>
                   <ul>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Italiano</li>
+                    <li><i class="bi bi-check-circle"></i> Inglese</li>
+                    <li><i class="bi bi-check-circle"></i> Spagnolo</li>
                   </ul>
                   <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
+                    Scegli la lingua e visualizza il menu di Restaurant Suite!
                   </p>
                 </div>
               </div>
@@ -238,25 +233,21 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+                  <img src="ourIMG/screenCerca.jpeg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Private Parties</h3>
-                  <div class="price">
-                    <p><span>$290</span></p>
-                  </div>
+                  <h3>Cerca una pietanza</h3>
                   <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                    Cerca una pietanza all'interno del menu caricando una foto!
                   </p>
                   <ul>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Premi Cerca</li>
+                    <li><i class="bi bi-check-circle"></i> Carica la foto</li>
+                    <li><i class="bi bi-check-circle"></i> Visualizza i risultati</li>
                   </ul>
                   <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
+                    Potrai caricare la foto di una pietanza, verificare
+                    la presenza di una pietanza simile o della stessa all'interno del menu!
                   </p>
                 </div>
               </div>
@@ -265,26 +256,17 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                  <img src="ourIMG/screenNotifiche.jpeg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Custom Parties</h3>
-                  <div class="price">
-                    <p><span>$99</span></p>
-                  </div>
+                  <h3>Notifiche</h3>
                   <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                    Ricevi notifiche comodamente dal nostro bot!
                   </p>
                   <ul>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li><i class="bi bi-check-circle"></i> Conferma prenotazione</li>
+                    <li><i class="bi bi-check-circle"></i> Notifica trenta minuti prima di una prenotazione</li>
                   </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
                 </div>
               </div>
             </div><!-- End testimonial item -->
