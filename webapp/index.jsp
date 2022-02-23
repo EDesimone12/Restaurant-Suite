@@ -408,7 +408,7 @@
 
           <div class="col-lg-6 col-md-6">
             <div class="member">
-              <div class="pic"><img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="ourIMG/eugenio.jpeg" class="img-fluid" alt="Master Chef Eugenio"></div>
               <div class="member-info">
                 <h4>Eugenio De Simone</h4>
                 <span>Master Chef</span>
@@ -422,13 +422,13 @@
 
           <div class="col-lg-6 col-md-6">
             <div class="member">
-              <div class="pic"><img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="ourIMG/lucia.jpeg" class="img-fluid" alt="Master Chef Lucia"></div>
               <div class="member-info">
                 <h4>Lucia Gaeta</h4>
                 <span>Master Chef</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-github"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://github.com/LuciaGGaeta"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/lucia-gaeta-a479a81b7/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
