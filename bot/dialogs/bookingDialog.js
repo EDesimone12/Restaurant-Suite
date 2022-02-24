@@ -103,7 +103,7 @@ class BookingDialog extends ComponentDialog {
         step.values.date = step.result;
         return await step.prompt(CHOICE_PROMPT, {
             prompt: "Inserisci l'orario.",
-            choices: ChoiceFactory.toChoices(['12:00', '12:30', '13:00', '13:30', '14:00', '14:30', '20:00', '20:30', '21:00', '22:00', '23:00', '24:00'])
+            choices: ChoiceFactory.toChoices(['12:00', '12:30', '13:00', '13:30', '14:00', '14:30', '20:00', '20:30', '21:00', '22:00', '23:00'])
         });
     }
 
