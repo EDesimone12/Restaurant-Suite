@@ -23,7 +23,7 @@ public class PrenotazioneDb {
             Prenotazione nuovo = new Prenotazione();
 
             while(rs.next()){
-
+                System.out.println("time"+rs.getTime(6));
                 nuovo = new Prenotazione(rs.getInt(1),rs.getString(2),
                         rs.getString(3),rs.getInt(4),rs.getString(5),
                         rs.getTime(6), rs.getDate(7));
