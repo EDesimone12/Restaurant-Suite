@@ -1,0 +1,36 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Image",
+      "url": "https://github.com/EDesimone12/Restaurant-Suite/blob/main/readmeIMG/card-bot.jpg?raw=true",
+      "size": "stretch"
+    },
+    {
+      "type": "TextBlock",
+      "spacing": "medium",
+      "size": "default",
+      "weight": "bolder",
+      "text": "Benvenuto in Restaurant Suite!",
+      "wrap": true,
+      "maxLines": 0
+    },
+    {
+      "type": "TextBlock",
+      "size": "medium",
+      "isSubtle": true,
+      "text": "Ora scegli cosa fare con il nostro bot!",
+      "wrap": true,
+      "maxLines": 0
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "RestaurantSuite sul web",
+      "url": "https://restaurantsuite.azurewebsites.net"
+    }
+  ]
+}
